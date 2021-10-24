@@ -17,15 +17,19 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
+.navbar .active {
+	font-weight: bold;
+}
 .navbar ul li{
 	display: inline-block;
+	font-weight: bolder;
+    color: #000000;
 	padding: 10px 15px;
 	margin-right: 25px;
-	font-weight: bold;
 }
 .navbar ul li a{
 	text-decoration: none;
-	color: #333;
+	color: #000000;
 	font-size: 1.2rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	padding: 10px;
@@ -56,13 +60,13 @@ body{
 }
 .main .year{
 	font-family: 'Big Shoulders Stencil Display', cursive;
-	font-size: 50px; 
+	font-size: 60px; 
 	margin-bottom: 10px;
 }
 .main h1{
 	font-family: 'Anton', sans-serif;
-	font-size: 80px;
-	letter-spacing: 2px;
+	font-size: 100px;
+	letter-spacing: 5px;
 	margin: 0%;
 }
 .main .desc{
@@ -79,7 +83,7 @@ body{
 	font-size: 25px;
 	text-decoration: none;
 	color: #fff;
-	border-radius: 40px;
+	box-sizing: border-box;
 }
 .main .btn:hover{
 	background-color: #fafafa;
@@ -91,6 +95,13 @@ body{
 	height: 550px;
 	margin-right: 5%;
 	float: right;
+}
+.active {
+	background-color: #ffffff;
+    color: #000000;
+	border-radius: 30px;
+	padding: 10px;
+    transition: all .2s;
 }
 ::-webkit-scrollbar {
 	width: 10px;
